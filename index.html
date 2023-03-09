@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <title>Portfólio Thalles</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="menu-container" >
+            <div class="menu-box-1" >
+                <ul>
+                    <a id="sobrebotao" class="menuitem"><li>Sobre mim</li></a>
+                    <a id="habilidadesbotao" class="menuitem"><li>Habilidades</li></a>
+                    <a id="projetosbotao" class="menuitem"><li>Projetos</li></a>
+                    <a id="formbotao" class="menuitem"><li>Entrar em contato</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="container-first">
+
+            <div class="first-infos-container">
+            <div class="name">
+                <div class="photo-first ">
+                    <img id="avatar-first" src="img/avatarwithbg.jpg" alt="" class="">
+
+                </div>
+                <h1 class="title-1">Olá, eu sou o</h1>
+                <h1 class="title-3">Thalles Henrique</h1>
+                <h3 class="title-2">Desenvolvedor web</h1>
+            </div>
+
+
+                <div class="button-about bg-blue inverted" id="contatobotao">
+                    Contato
+                </div>
+            </div>
+        </div>
+        <div class="container-top inverted">
+            <div class="container-items-top grid-template-top" id="contato">
+                
+                <h1 class="alternative-subtitle" id="sobre">SOBRE MIM</h1>
+                <div class="text">
+                    <span class="bio">Me chamo Thalles, atualmente sou desenvolvedor web com foco no back-end, também conhecimentos sólidos de front-end com HTML, CSS e JS. Gosto de resolver problemas e implementar soluções.</span>
+                </div>
+                <div class="photo">
+                    <div class="circle">
+                    <img id="avatar" src="img/avatar.jpg" width="200px" height="500px" alt="">
+                    </div>
+
+                </div>
+                <div class="contact">
+                    <h1>CONTATO:</h1>
+                    <ul>
+                        <li><img src="img/icons/github.png" width="25px;" alt="">
+                            OThalles
+                        </li>
+                        <li><img src="img/icons/email.png" width="25px;" title="github" alt="">
+                            thallesdev1@gmail.com
+                        </li>
+                        <li><img src="img/icons/pin.png" width="25px;" title="local" alt="">
+                            Guaxupé-MG
+                        </li>
+                        <li><img src="img/icons/whatsapp.png" class="contact-longtext" width="25px;" title="local" alt="">
+                               <a href="https://api.whatsapp.com/send?phone=5535998216540&text=Ol%C3%A1%20Thalles!" target="_blank" style="color:green">Clique para me enviar uma mensagem!</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>        
+        <div class="container-mid" id="habilidades">
+            <div class="subtitle">
+                <h1>HABILIDADES</h1>
+            </div>
+            <div class="text-abilities">
+                <div class="icons-abilities">
+                    <img src="img/icons/php.png" title="PHP">
+                    <img src="img/icons/laravel.png" title="LARAVEL">
+                    <img src="img/icons/js.png" title="JAVASCRIPT">
+                    <img src="img/icons/python.png" title="PYTHON">
+                    <img src="img/icons/mysql.png" title="MYSQL">
+                    <img src="img/icons/html.png" title="HTML">
+                    <img src="img/icons/css.png" title="CSS">
+                    <img src="img/icons/jquery.png" title="JQUERY">
+        
+                </div>
+            </div>
+        </div>
+        <div class="container-bottom" id="projetos">
+            <div class="subtitle">
+                <h1>PORTFÓLIO</h1>
+            </div>
+            <div class="container-items-bottom">
+                <div class="models-container">
+                    <h2>ErpV</h2>
+                    <div class="project">
+                        <img src="img/projects/ErpV.png" alt="">
+                    </div>
+                    <span class="about-project">SistemaCaixa é um site para gestão de pequenos comércios (Controle de estoque, vendas, etc...)</span>
+                    <span class="about-project">Criado com PHP, Laravel, Jquery, Javascript e Mysql</span>
+                    <div class="button-see-project">
+                        <a href="https://github.com/OThalles/erpV-Gestao-de-comercio"></a>
+                        Ver projeto
+                    </div>
+                </div>
+
+                <div class="models-container">
+                    <h2>AskForMe</h2>
+                    <div class="project">
+                        <img src="img/projects/AskForMe.png" alt="">
+                    </div>
+                    <span class="about-project">AskForMe é um site onde as pessoas fazem e respondem perguntas.</span>
+                    <span class="about-project">Criado com PHP, JQUERY, MYSQL</span>
+                    <a href="https://github.com/OThalles/AskForMe"><div class="button-see-project">
+                        Ver projeto
+                    </div>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="container-contact" id="form">
+            <h1 class="form-title">Fique á vontade para entrar em contato comigo:</h1>
+            <form action="https://formsubmit.co/thallesdev1@gmail.com" method="POST" class="form-contact">
+                <label for="" class="form-field">
+                    <h3>Seu nome:</h3>
+                </label>
+                <input type="text" class="form-input" name="name" required autocomplete="off">
+
+                <label for="" class="form-field">
+                    <h3>Seu email:</h3>
+                </label>
+                <input type="email" class="form-input" name="email" required autocomplete="off">
+
+                <label for="" class="form-field">
+                    <h3>Mensagem:</h3>
+                </label>
+                <textarea name="message" placeholder="Escreva aqui sua mensagem" required class="form-textarea form-input" height="300px"></textarea>
+
+
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <button type="submit" class="form-submit">Enviar</button>
+           </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
