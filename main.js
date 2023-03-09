@@ -49,3 +49,15 @@ document.querySelectorAll('#contatobotao').forEach(item=>{
 })
 
 })
+
+document.querySelectorAll(".tech").forEach(e=> {
+    e.addEventListener('mouseover', function(){
+        e.classList.toggle("reverse")
+    })
+})
+
+document.querySelectorAll(".contact-item a").forEach(e=> {
+    e.addEventListener('mouseover', function(){
+        e.classList.toggle("reverse")
+    })
+})

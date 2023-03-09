@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container" >
-        <div class="menu-container" >
+        <div class="menu-container flex-aligned" >
             <div class="menu-box-1" >
                 <ul>
                     <a id="sobrebotao" class="menuitem"><li>Sobre mim</li></a>
@@ -24,7 +24,7 @@
         </div>
         <div class="container-first">
 
-            <div class="first-infos-container">
+            <div class="first-infos-container flex-aligned">
             <div class="name">
                 <div class="photo-first ">
                     <img id="avatar-first" src="img/avatarwithbg.jpg" alt="" class="">
@@ -41,63 +41,69 @@
                 </div>
             </div>
         </div>
-        <div class="container-top inverted">
+        <div class="container-top flex-aligned inverted">
             <div class="container-items-top grid-template-top" id="contato">
                 
                 <h1 class="alternative-subtitle" id="sobre">SOBRE MIM</h1>
                 <div class="text">
-                    <span class="bio">Me chamo Thalles, atualmente sou desenvolvedor web com foco no back-end, também conhecimentos sólidos de front-end com HTML, CSS e JS. Gosto de resolver problemas e implementar soluções.</span>
+                    <span class="bio">Me chamo Thalles, vivo em Guaxupé-MG, atualmente sou desenvolvedor web com foco no back-end (PHP e LARAVEL), também conhecimentos sólidos de front-end com HTML, CSS e JS. Gosto de resolver problemas e implementar soluções.</span>
                 </div>
                 <div class="photo">
-                    <div class="circle">
+                    <div class="circle flex-aligned">
                     <img id="avatar" src="img/avatar.jpg" width="200px" height="500px" alt="">
                     </div>
 
                 </div>
-                <div class="contact">
-                    <h1>CONTATO:</h1>
-                    <ul>
-                        <li><img src="img/icons/github.png" width="25px;" alt="">
-                            OThalles
-                        </li>
-                        <li><img src="img/icons/email.png" width="25px;" title="github" alt="">
-                            thallesdev1@gmail.com
-                        </li>
-                        <li><img src="img/icons/pin.png" width="25px;" title="local" alt="">
-                            Guaxupé-MG
-                        </li>
-                        <li><img src="img/icons/whatsapp.png" class="contact-longtext" width="25px;" title="local" alt="">
-                               <a href="https://api.whatsapp.com/send?phone=5535998216540&text=Ol%C3%A1%20Thalles!" target="_blank" style="color:green">Clique para me enviar uma mensagem!</a>
-                        </li>
-
-                    </ul>
-                </div>
             </div>
+        </div>
+        <div class="subtitle flex-aligned">
+            <h1>HABILIDADES</h1>
         </div>        
-        <div class="container-mid" id="habilidades">
-            <div class="subtitle">
-                <h1>HABILIDADES</h1>
-            </div>
-            <div class="text-abilities">
+        <div class="container-mid flex-aligned" id="habilidades">
+            <div class="text-abilities flex-aligned">
                 <div class="icons-abilities">
-                    <img src="img/icons/php.png" title="PHP">
-                    <img src="img/icons/laravel.png" title="LARAVEL">
-                    <img src="img/icons/js.png" title="JAVASCRIPT">
-                    <img src="img/icons/python.png" title="PYTHON">
-                    <img src="img/icons/mysql.png" title="MYSQL">
-                    <img src="img/icons/html.png" title="HTML">
-                    <img src="img/icons/css.png" title="CSS">
-                    <img src="img/icons/jquery.png" title="JQUERY">
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/php.png" title="PHP">
+                        <p class="white">PHP</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/laravel.png" title="LARAVEL">
+                        <p class="white">Laravel</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/js.png" title="JAVASCRIPT">
+                        <p class="white">JavaScript</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/python.png" title="PYTHON">
+                        <p class="white">Python</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/mysql.png" title="MYSQL">
+                        <p class="white">Mysql</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/html.png" title="HTML">
+                        <p class="white">Html</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/css.png" title="CSS">
+                        <p class="white">Css</p>
+                    </div>
+                    <div class="tech flex-aligned">
+                        <img src="img/icons/jquery.png" title="JQUERY">
+                        <p class="white">Jquery</p>
+                    </div>
         
                 </div>
             </div>
         </div>
         <div class="container-bottom" id="projetos">
-            <div class="subtitle">
+            <div class="subtitle flex-aligned">
                 <h1>PORTFÓLIO</h1>
             </div>
             <div class="container-items-bottom">
-                <div class="models-container">
+                <div class="models-container flex-aligned">
                     <h2>ErpV</h2>
                     <div class="project">
                         <img src="img/projects/ErpV.png" alt="">
@@ -110,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="models-container">
+                <div class="models-container flex-aligned">
                     <h2>AskForMe</h2>
                     <div class="project">
                         <img src="img/projects/AskForMe.png" alt="">
@@ -127,8 +133,57 @@
             </div>
         </div>
         <div class="container-contact" id="form">
-            <h1 class="form-title">Fique á vontade para entrar em contato comigo:</h1>
+            <div class="subtitle flex-aligned">
+                <h1>Contatos:</h1>
+            </div>
+            <div class="contact">
+                    <div class="contact-item">
+                        <a href="https://github.com/OThalles" class="smoothhover">
+                            <div class="contact-circle flex-aligned">
+                                <img src="img/icons/github.png" class="contact-icon" width="35px;" alt="">
+                            </div>
+                            <p class="white"><b>Github</b></p>
+                            <p class="white">@OThalles</p>
+                        </a>
+                    </div>
+                        <div class="contact-item">
+                            <a class="smoothhover">
+                            <div class="contact-circle flex-aligned">
+                                <img src="img/icons/email.png" class="contact-icon" width="30px;" title="github" alt="">
+                            </div>
+                            <p class="white"><b>E-mail</b></p>
+                            <p class="white">thallesdev1@gmail.com</p>
+                            </a>
+                        </div>
+                    
+                        <div class="contact-item flex-aligned">
+                            <a href="https://wa.me/5535998216540?text=Ol%C3%A1%20Thalles." class="smoothhover">
+                            <div class="contact-circle flex-aligned">
+                                <img src="img/icons/whatsapp.png" class="contact-icon" width="30px;" title="whatsapp" alt="">
+                            </div>
+                            <p class="white"><b>Whatsapp</b></p>
+                            <p class="white">35 99821-6540</p>
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="https://www.linkedin.com/in/thalles-henrique-911818260/" class="smoothhover">    
+                                <div class="contact-circle flex-aligned">
+                                    <img src="img/icons/linkedin.png" class="contact-icon" width="30px;" title="whatsapp" alt="">
+                                </div>
+                            <p class="white"><b>Linkedin</b></p>
+                            <p class="white">Thalles Henrique</p>
+                            </a>
+                        </div>
+                    </a>
+                
+            </div>
+
+            <div class="separation-form">
+            <hr class="hr-or"> <h3 style="color:white">OU</h3> <hr class="hr-or">
+            </div>
             <form action="https://formsubmit.co/thallesdev1@gmail.com" method="POST" class="form-contact">
+                <h1 class="form-title">Fique á vontade para entrar em contato comigo pelo e-mail:</h1>
                 <label for="" class="form-field">
                     <h3>Seu nome:</h3>
                 </label>
@@ -142,7 +197,7 @@
                 <label for="" class="form-field">
                     <h3>Mensagem:</h3>
                 </label>
-                <textarea name="message" placeholder="Escreva aqui sua mensagem" required class="form-textarea form-input" height="300px"></textarea>
+                <textarea name="message" placeholder="Escreva aqui sua mensagem" required class="form-textarea form-input"></textarea>
 
 
 

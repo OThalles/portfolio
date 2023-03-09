@@ -19,6 +19,17 @@ html {
 
 }
 
+.smoothhover:hover {
+    animation: aumenta 0.4s ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.flex-aligned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -26,6 +37,7 @@ body {
     font-family: 'Segoe UI', monospace;  
     background-color: var(--primary-dark-color);
 }
+
 
 body::-webkit-scrollbar {
     width: 12px;
@@ -57,12 +69,10 @@ body::-webkit-scrollbar {
     font-family: var(--font-poppins);
 }
 .first-infos-container {
-    display: flex;
-    width: 100%px;
+    width: 100%;
     height: 70vh;
-    align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction:column;
     border-radius: 7px;
 }
 .photo-first #avatar-first {
@@ -131,40 +141,12 @@ body::-webkit-scrollbar {
 }
 
 .container-top {
-    display:flex;
     height: 900px;
     width: 100%;
-    justify-content: center;
-    align-items: center; 
     flex-direction:column;
     background-color: #363636;
 }
 
-
-.contact {
-    color: var(--primary-text-colors);
-    font-family: 'Montserrat', sans-serif;
-}
-
-.contact h1{
-    color: var(--white);
-}
-
-.contact ul li{
-    display: flex;
-    align-items: center;
-}
-.contact img{
-    margin-right: 10px;
-    margin-bottom: 7px;
-}
-.contact h1 {
-    margin-bottom: 10px;
-}
-
-.contact-longtext {
-
-}
 .container-top li {
     list-style: none;
 }
@@ -181,6 +163,7 @@ body::-webkit-scrollbar {
 }
 .bio {
     color: #EEEEEE;
+    font-size: 18px;
     font-family: var(--font-poppins);
 }
 .grid-template-top {
@@ -188,9 +171,9 @@ body::-webkit-scrollbar {
     grid-template-columns:20% 20%;
     grid-template-rows: 20% 50%;
     grid-template-areas:
-    "alternative-subtitle photo"
+    "alternative-subtitle alternative-subtitle"
     "texto photo"
-    "contact photo";
+    "texto photo";
     width: 100%;    
     justify-content:center;
     align-items:center; 
@@ -205,8 +188,8 @@ body::-webkit-scrollbar {
 
 #avatar {
     margin: 0 auto;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	background-size: cover;
 	background-position: top center;
 	border-radius: 50%;
@@ -217,32 +200,27 @@ body::-webkit-scrollbar {
 	border: 2px solid #adb5bd;
 	border-radius: 50%;
     padding: 2px;
-	height: 200px;
-	width: 200px;
-	display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 250px;
+	width: 250px;
     background-color: var(--default-blue);
 }
 
 @media (max-width: 850px) {
     .grid-template-top {
         grid-template-columns:60% 40%;
-        grid-template-rows: 30% 50%;
+        grid-template-rows: 40% 50% 40% 40%;
         grid-template-areas:
         "alternative-subtitle alternative-subtitle alternative-subtitle"
         "photo photo photo"
         "texto texto texto"
-        "contact contact contact";
+        "texto texto texto";
     }
 }
 
 .menu-container {
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 50px;
-    align-items: center;
+    text-align: center;
     background-color: #000;
 }
 
@@ -267,9 +245,7 @@ body::-webkit-scrollbar {
 
 .container-mid {
     font-family: var(--font-poppins);
-    display: flex;
     flex-direction: column;
-    align-items: center;
     letter-spacing: 2px;  
     width: 100%;
     background-color: #363636;
@@ -278,11 +254,8 @@ body::-webkit-scrollbar {
 }
 
 .text-abilities{
-    display: flex;
     width: 100%;
     height: 400px;
-    align-items: center;
-    justify-content: center;
     
 }
 
@@ -294,6 +267,44 @@ body::-webkit-scrollbar {
 .text-abilities ul {
     margin-bottom: 50px;
 }
+
+.tech {
+    flex-direction: column;
+    background-color:#003049; 
+    height: 140px;
+    width: 150px;
+    border-radius: 7px 7px 0px 0px;
+    border-bottom: 2px solid var(--default-blue);
+}
+
+.tech:hover {
+    animation: aumenta 0.4s ease;
+    -webkit-animation-fill-mode: forwards;
+    border-radius: 4px;
+}
+
+
+
+.reverse {
+    animation-name: reverseanim;
+    animation-duration: .2s;
+}
+
+@keyframes reverseanim {
+    from {
+        transform:scale(1.1)
+    } 
+    to {
+        transform:scale(1.0)
+    }
+}
+
+@keyframes aumenta {
+    to { transform:scale(1.1)  }
+    from { transform: scale(1.0)}
+}
+
+
 .icons-abilities {
     display: flex;
     flex-wrap: wrap;
@@ -308,22 +319,8 @@ body::-webkit-scrollbar {
 
 }
 
-.icons-abilities img:hover {
-    animation: aumenta 0.4s ease;
-    -webkit-animation-fill-mode: forwards;
-    border-bottom: 2px solid var(--default-blue);
-    border-radius: 4px;
 
-}
-@keyframes aumenta {
-    to { transform:scale(2.0)  }
-}
 
-.icons-abilities img:hover {
-
-    background-color: #ced4da;
-    border-radius: 4px;
-}
 
 /* Projetos */ 
 
@@ -345,10 +342,7 @@ body::-webkit-scrollbar {
 
 .models-container {
     transition: .3s;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 48vw;
     height: 600px;
     border: 2px solid var(--default-blue);
@@ -382,15 +376,18 @@ body::-webkit-scrollbar {
     .container-items-bottom {
         flex-direction: column;
     }
-    .icons-abilities img {
-        margin: 25px;
+
+    .tech{
+        margin: 15px;
     }
 
+    .container-mid{
+        height: 800px;
+    }
     .models-container{
         height: 30em;
         width: 90%;
     }
-
     .project img {
         height: 10em;
         width: 100%;
@@ -399,11 +396,9 @@ body::-webkit-scrollbar {
 
 
 .subtitle {
+    margin-top: 10px;
     font-family: var(--font-poppins);
     color: var(--default-blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100px;
     background-color: #343a40;
@@ -411,6 +406,7 @@ body::-webkit-scrollbar {
 
 .alternative-subtitle{
     color: var(--default-blue);
+    text-align: center;
     font-family: var(--font-poppins);
 }
 
@@ -419,10 +415,66 @@ body::-webkit-scrollbar {
     color: var(--default-blue);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 50px;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 1300px;
+}
+.contact-circle{
+    margin: 0 auto; 
+    border-radius: 50%;
+    padding: 2px;
+    height: 50px;
+    width: 50px;
+    background-color: #14213d;
+}
+
+.contact {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: var(--primary-text-colors);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact h1{
+    color: var(--white);
+}
+
+
+
+
+.contact-item a{
+    transition: .3s;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item:hover{
+    transform: scale(1.2);
+}
+
+
+.hr-or{
+    height: 1px;
+    background-color: white;
+    width: 50px;
+}
+
+.separation-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+}
+
+form {
+    height: 1400px;
 }
 
 .form-title{
@@ -435,7 +487,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 700px;
     justify-content: space-around;
 
 }
@@ -451,7 +503,6 @@ body::-webkit-scrollbar {
 
 .form-field {
     width: 31%;
-
 }
 
 .form-field h3{
@@ -466,12 +517,15 @@ body::-webkit-scrollbar {
     border-radius: 8px;
     font-family: var(--font-poppins);
     font-size: 15px;
-    background-color: transparent;
     background-color: var(--default-blue);
     color: #fff;
     width: 120px;
     cursor:pointer;
     border: none;
+}
+
+.white{
+    color:white;
 }
 
 .form-submit::placeholder{
@@ -485,11 +539,16 @@ body::-webkit-scrollbar {
 }
 
 .form-textarea{
-    height: 200px;
+    height: 300px;
 }
 
 @media (max-width: 850px) {
     .form-input{
         width: 80%;
+    }
+    
+    .contact{
+        flex-direction: column;
+        height: 500px;
     }
 }
